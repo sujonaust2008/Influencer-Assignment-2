@@ -1,0 +1,349 @@
+/* -----------------
+    common style
+--------------------*/
+
+body{
+    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+    
+
+} 
+
+/* -----------------------
+    header section start 
+------------------------ */
+header{
+    margin-bottom: 80px;
+    padding: 30px;
+}
+    /* -----------------
+        nav section  start
+    ---------------------*/
+   
+    .nav-elements{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+    .nav-title{
+        font-family: 'Poppins', sans-serif; 
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .nav-list{
+        display: block
+    }
+    .nav-items{
+        display: flex;
+    }
+    @media (max-width:600px){
+        .nav-list{
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 601px) and (max-width: 1000px) {
+        .nav-list{
+            display: none;
+        }
+    }
+    .nav-items>li{
+        list-style: none;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    .nav-items>li>a{
+        font-family: 'Poppins', sans-serif; 
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+    /* nav section end here*/
+
+
+    /* --------------------------
+        Influencer section start
+    -----------------------------*/
+    
+    .header-grid{
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+    .half-width{
+        width: 50%;
+        padding: 10px;
+    }
+    @media only screen and (max-width: 600px) {
+        .header-grid{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    
+    .header-title{
+        font-size: 50px;
+        font-weight: 900;
+        padding-top: 10%;
+        font-family: 'Poppins', sans-serif; 
+        line-height: 60px;
+    }
+    .title-section p{
+        font-family: 'Poppins', sans-serif; 
+        font-size: 16px;
+    }
+    
+    .button-style{
+        margin-top: 25px;
+        background-color: #E02C6D;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 25px;
+        border-style: none;
+    }
+
+    
+    .image-section{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center center;
+        background-size: 60%;
+        background-image: url(images/Circle\ design.svg);
+        background-repeat: no-repeat;
+    }
+    .main-camera{
+        width: 340px;
+        height: 300px;
+    }
+    .main-camera:hover {
+        transform: rotate(-10deg) scale(1.2, 1.2);
+        transition: transform 0.7s ease-in;
+
+    }
+    .header-button:hover .button-style{
+        background-color: tomato;
+        transform: translate(250px);
+        transition: transform 1s ease-in-out;
+    }
+    /*  Influencer section end here  */
+/* herader section end here  */
+
+
+
+/*---------------------- 
+sponsor section start  
+-----------------------*/
+.sponsor-section{
+    margin-bottom: 150px;
+    padding: 30px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.sponsor{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 100%;
+}
+@media only screen and (max-width:600px) {
+    .sponsor{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* sponsor section end  */
+
+
+
+
+/*---------------------- 
+Popular section start  
+------------------------*/
+
+main{
+    margin-bottom: 80px;
+    padding: 30px;
+}
+.main-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.Popular-section{
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px 25px #f1f1f1;
+    background-color: #f1f1f1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+@media only screen and (max-width: 600px) {
+    .Popular-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .Popular-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.Popular-card{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.Popular-card img{
+    width: 100%;
+}
+
+main .fas{
+    color: goldenrod;
+    font-size: 10px;
+}
+
+/* see more section  */
+.seemore-section{
+    display: flex;
+    justify-content: right;
+    margin-top: 35px;
+}
+.seemore{
+    margin-top: 25px;
+    color: #E02C6D;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border-style: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+.seemore .fas{
+    color: #E02C6D;
+    font-size: 16px;
+}
+
+/* -------------------
+Featured section start
+-------------------  */
+
+.Featured-section{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 150px;
+}
+.Featured-img{
+    padding: 15px;
+}
+.Featured-blog{
+    padding: 15px;
+}
+.Featured-blog p, h2, button{
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width:600px) {
+    .Featured-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width:601px) and (max-width:800px){
+    .Featured-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.Featured-section h1{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0;
+}
+.Featured-img img{
+    width: 100%;
+
+}
+.Featured-section p{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+}
+.button-style-02{
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 25px;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 25px;
+    border-style: none;
+}
+
+/* -------------------
+Footer section start
+-------------------  */
+
+
+.footer-section{
+    padding: 40px;
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+}
+.footer-section h1{
+    padding: 0;
+    margin: 0;
+}
+.footer-section p{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.social-items{
+    margin-top: 25px;
+}
+.fab{
+    margin-right: 20px;
+    background-color: #22203B;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #22203B;
+}
+
+/* bonus section  */
+.bonus-section{
+    margin-bottom: 150px;
+}
+.bonus-section h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.bonus-section{
+   height: 450px;
+}
+.Airport{
+    width: 100%;
+    height: 450px;
+    
+}
+.airplane{
+    width: 25%;
+    position: relative;
+    animation-name: AirTravel;
+    animation-duration: 5s;  
+    animation-delay: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes AirTravel {
+    0%{left: 75%; top: -150px;}
+    40%{left: 40%; top: -150px;}
+    50%{left: 35px; top: -250px; transform: rotate(15deg);}
+    100%{left: -25%; top: -380px}
+
+}
