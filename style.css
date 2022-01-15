@@ -6,8 +6,6 @@ body{
     margin-top: 50px;
     margin: 0;
     padding: 0;
-    
-
 } 
 
 /* -----------------------
@@ -81,8 +79,7 @@ header{
             align-items: center;
         }
     }
-    
-    
+
     .header-title{
         font-size: 50px;
         font-weight: 900;
@@ -138,7 +135,7 @@ header{
 sponsor section start  
 -----------------------*/
 .sponsor-section{
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     padding: 30px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
@@ -168,7 +165,7 @@ Popular section start
 ------------------------*/
 
 main{
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     padding: 30px;
 }
 .main-heading{
@@ -235,7 +232,7 @@ Featured section start
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 .Featured-img{
     padding: 15px;
@@ -266,7 +263,6 @@ Featured section start
 }
 .Featured-img img{
     width: 100%;
-
 }
 .Featured-section p{
     font-family: 'Poppins', sans-serif; 
@@ -279,6 +275,44 @@ Featured section start
     color: white;
     padding: 10px 25px;
     border-style: none;
+}
+
+
+/*------------------------ 
+bonus section start here
+------------------------  */
+.bonus-section{
+    margin-bottom: 150px;
+}
+.bonus-section h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.bonus-section{
+   height: 450px;
+}
+.Airport{
+    width: 100%;
+    height: 450px;
+    
+}
+.airplane{
+    width: 25%;
+    position: relative;
+    animation-name: AirTravel;
+    animation-duration: 5s;  
+    animation-delay: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes AirTravel {
+    0%{left: 75%; top: -150px;}
+    40%{left: 40%; top: -150px;}
+    50%{left: 35px; top: -250px; transform: rotate(15deg);}
+    100%{left: -25%; top: -380px}
+
 }
 
 /* -------------------
@@ -313,37 +347,3 @@ Footer section start
     border: 1px solid #22203B;
 }
 
-/* bonus section  */
-.bonus-section{
-    margin-bottom: 150px;
-}
-.bonus-section h1{
-    text-align: center;
-    text-decoration: underline;
-}
-.bonus-section{
-   height: 450px;
-}
-.Airport{
-    width: 100%;
-    height: 450px;
-    
-}
-.airplane{
-    width: 25%;
-    position: relative;
-    animation-name: AirTravel;
-    animation-duration: 5s;  
-    animation-delay: .5s;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-}
-
-@keyframes AirTravel {
-    0%{left: 75%; top: -150px;}
-    40%{left: 40%; top: -150px;}
-    50%{left: 35px; top: -250px; transform: rotate(15deg);}
-    100%{left: -25%; top: -380px}
-
-}
