@@ -234,12 +234,7 @@ Featured section start
     grid-template-columns: 1fr 2fr;
     margin-bottom: 50px;
 }
-.Featured-img{
-    padding: 15px;
-}
-.Featured-blog{
-    padding: 15px;
-}
+
 .Featured-blog p, h2, button{
     margin: 0;
     padding: 0;
